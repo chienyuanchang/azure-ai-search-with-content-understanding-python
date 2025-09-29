@@ -79,11 +79,12 @@ const DEFAULT_JSON_CONFIG = {
   analyzerId: "video_cu_analyzer",
   name: "Video Content Understanding",
   description: "Generating content understanding from video.",
-  scenario: "videoShot",
+  baseAnalyzerId: "prebuilt-videoAnalyzer",
   config: {
     returnDetails: true,
     locales: ["en-US", "es-ES", "es-MX", "fr-FR", "hi-IN", "it-IT", "ja-JP", "ko-KR", "pt-BR", "zh-CN"],
     enableFace: false,
+    segmentationMode: "noSegmentation",
   },
   fieldSchema: {
     name: "Content Understanding",
